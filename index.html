@@ -1,0 +1,142 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="paulo melos">
+        <meta name="keywords" content="site,loja,hospedagens">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.css">
+        <title>HDC Hospedagem Ltda</title> 
+    </head>
+    <header>
+        <div id="menu">
+            <nav id="menu-nav">
+                <a href="#"><img class="logo" src="img/hdchostlogo.png" alt="logo marca HDC Hosp"></a><!--MUITO IMPORTANTE : deixa todos elementos do menu no nav,se tirar o <a> do <nav> os elementos do menu quebram-->    
+                <ul id="ul-nav">
+                    <li class="li-nav"><a href="#">Home</a></li>
+                    <li class="li-nav"><a href="#">Plano</a></li>
+                    <li class="li-nav"><a href="#">Contrato</a></li>
+                    <li class="li-nav login"><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <body>
+        <main id="main-principal">
+            <section class="main-banner">
+               <!--IMPORTANTE: não esquecer das divs dos textos-->
+               <div class="text">
+                    <h1>HDC Hospedagem</h1>
+                    <p>Seu melhor plano de hospedagens está aqui.</p>     
+               </div>
+            </section>
+        
+            <article id="artigo-principal">
+                <section class="section-icons">
+                    <ul id="ul-icons">
+                        <li class="li-icons">
+                            <i class="fa-solid fa-shield "></i>
+                            <h2>Segurança</h2>                    
+                            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </li>
+                    
+                        <li class="li-icons">
+                            <i class="fa-solid fa-rocket "></i>
+                            <h2>Velocidade</h2>               
+                            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </li>
+
+                        <li class="li-icons">
+                            <i class="fa-solid fa-comment"></i>
+                            <h2>Suporte</h2>               
+                            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </li>
+                    </ul>
+                </section>
+                
+                <section class="section-plans">
+                    <h1>Planos e preços</h1>
+                    <p>Os melhores planos e preços para sua empresa.</p>
+                    <div class="container-plans">
+
+                        <div class="plans">
+                            <ul id="padrao">
+                                <li class="circle">R$15/mês</li>
+                                <li class="rectangle">PADRÃO</li>
+                                <li>2GB de espaço</li>
+                                <li>10 Subdominios</li>
+                                <li>25 Contas de e-mail</li>
+                                <li>Suporte 24 horas</li>
+                                <button class="btn">Selecionar</button>
+                            </ul>
+                        </div>
+
+                        <div class="plans">
+                            <ul id="dedicado">
+                                <li class="circle">R$30/mês</li>
+                                <li class="rectangle">DEDICADO</li>
+                                <li>4GB de espaço</li>
+                                <li>20 Subdominios</li>
+                                <li>45 Contas de e-mail</li>
+                                <li>Suporte 24 horas</li>
+                                <button class="btn">Selecionar</button>
+                            </ul>
+                        </div>
+
+                        <div class="plans">
+                            <ul id="dedicado-plus">
+                                <li class="circle recommend">R$15/mês</li>
+                                <li class="rectangle">DEDICADO PLUS</li>
+                                <li>6GB de espaço</li>
+                                <li>30 Subdominios</li>
+                                <li>25 Contas de e-mail</li>
+                                <li>Suporte 24 horas</li>
+                                <button class="btn recommend">Selecionar</button>
+                            </ul>
+                        </div>
+
+                        <div class="plans">
+                            <ul id="cloud">
+                                <li class="circle">R$50/mês</li>
+                                <li class="rectangle">CLOUD</li>
+                                <li>20GB de espaço</li>
+                                <li>80 Subdominios</li>
+                                <li>55 Contas de e-mail</li>
+                                <li>Suporte 24 horas</li>
+                                <button class="btn">Selecionar</button>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="section-domain">
+                    <h1>Faça a busca de um domínio</h1>
+                    <p>Veja se seu futuro domínio está disponível.</p>
+                    <form id="form-domain" method="post">
+                        <div class="div-inputs">
+                            <input type="text" placeholder="Digite um domínio" name="email">
+                            <input type="submit" value="Buscar">
+                        </div>
+                    </form>
+                </section>
+
+                <section class="section-contact">
+                    <h1>Entre em contato</h1>
+                    <p>Converse com nosso suporte</p>
+                    <form id="form-contact">
+                        <input class="input-text" type="text" name="name" placeholder="Seu nome">
+                        <input class="input-text" type="email" name="email" placeholder="Seu email">
+                        <input class="input-text" type="textarea" name="texto" placeholder="Sua mensagem">
+                        <input class="btn" type="button" value="Enviar">
+                    </form>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <p>Desenvolvidor por Paulo Melos :) </p>
+        </footer>
+    </body>
+ </html>

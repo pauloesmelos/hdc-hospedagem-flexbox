@@ -1,0 +1,318 @@
+/** MUITO IMPORTANTE : deixar todos elementos do menu no nav,se tirar o <a> do <nav> os elementos do menu quebram**/    
+
+/** geral css **/
+h1,h2,h3{
+    color: rgb(73,73,73);
+    font-weight: lighter;
+}
+p{
+    color: #70747A;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/** **/
+
+/** div  container1 = relative, nav container2 = relative, ul container3 = absolute**/ 
+#menu{
+    background-color: #34454E;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+#menu-nav{
+    position: relative;
+}
+#ul-nav{
+    position: absolute; /** absolute pra ficar "solto" **/
+    margin: 0;
+    right: 0;
+    display: inline-block; /** display inline-block no container ul e nos li's**/
+    list-style-type: none;
+}
+.li-nav{
+    display: inline-block; /** display inline-block no container ul e nos li's**/
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.li-nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.li-nav a:hover{
+    color: rgb(226, 167, 57);
+}
+.login{
+    background-color: #20f020;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+.login a:hover{ /** pro css funcionar em uma classe dupla precisa colocaro a (<a>) **/
+    color: #333;
+}
+/** **/
+
+/** main-banner **/
+.main-banner{
+    /** no banner nao precisa definir width **/
+    background-image: url('img/mainbanner.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 12rem; /** padding eliminou a área em branco que separava o menu do banner**/
+}
+.text{
+    width: 80%;
+    text-align: end;
+    font-weight: 800;
+
+}
+.text h1{
+    color: #fff;
+    font-size: 70px;
+}
+.text p{
+    font-size: 20px;
+    color: rgb(228, 218, 218);
+    margin-right: 50px;
+}
+/** **/
+
+/** section-icons**/
+.section-icons{
+    width: 100%;
+    padding: 5em 0; /** aplica espaçamento entre a seçao de cima e baixo(banner e seção planos) verticalmente **/
+}
+#ul-icons{
+    position: relative;
+    display: flex;
+    width: 90%;
+
+    margin-left: auto; /** não foi necessário alinha-los horizntalmente,mas eu apliquei msm assim **/
+    margin-right: auto;/** não foi necessário alinha-los horizntalmente,mas eu apliquei msm assim **/
+}
+.li-icons{
+    list-style-type: none;
+    text-align: center;
+    padding: 20px; /** padding no li: "consertou" o texto do <p> e aumentou o tamanho da div li-icons
+    em cima e embaixo + nas laterais > direcionando pro CENTRO**/
+
+    /** padding: 20px = em cima e embaixo + nas laterais**/
+    /** padding: 20px 0 = somente em cima e embaixo **/
+}
+.li-icons p{
+    line-height: 25px;
+    margin-top: 60px;
+}
+.fa-shield{
+    font-size: 50px;
+    color: #65d368;
+}
+.fa-rocket{
+    font-size: 50px;
+    color: #e6656e;
+}
+.fa-comment{
+    font-size: 50px;
+    color: #f09f70;
+}
+
+/** **/
+
+/** section-plans **/
+.section-plans{
+    width: 100%;
+    text-align: center;
+}
+.section-plans h1{
+    font-size: 45px;
+}
+.section-plans p{
+    font-size: 30px;
+}
+.container-plans{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    width: 90%; /** ajuda os elementos a não ficarem colados em cada borda da tela(efeito do space-between)**/
+
+}
+.plans{
+    flex: 1 1 0; /** shrink grow flex-basis: ajudam a alinhar os elementos pro centro **/
+    /** shrink (1) = permite que os elementos sejam reduzidos**/
+    /** grow (1) = todos elementos do display:flex crescerão igualmente entre si **/
+    /** flex-basis (0) = 0 é o valor default.Caso queira alterar aplica o flex-basis diretamente num elemento**/
+    margin-left: 50px;
+}
+.plans li{
+    list-style-type: none;
+    line-height: 50px; /** aumenta a lista verticalmente **/
+    height: 80px;      /** aumenta a lista verticalmente **/
+    color: #333;
+    background-color: rgb(236, 226, 226);
+}
+.plans .circle{
+    background-color: #2CC762;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    color: #fff;/** circulo formatado **/
+
+    position: relative;
+    margin-left: auto;
+    margin-right: auto /** alinhando o circulo no meio do <li> **/;
+
+    font-size: 20px;
+    line-height: 110px; /** alinhando o texto no meio do circulo **/
+    margin-bottom: -50px; /** jogando o circulo pra dentro do container **/
+    
+}
+
+.plans .rectangle{
+    padding-top: 80px;
+    background-color: #515558;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.btn{
+    background-color: #2cc762;
+    color: #fff;
+
+    line-height: 70px;
+    font-size: 25px;
+    cursor: pointer;
+
+    transition: 0.7s;
+    border: none;
+    width: 100%;
+}
+.plans .recommend{ /** p acessar uma classe secundária colocar o nome do CONTAINER PRINCIPAL primeiro e não da classe primária  **/
+    background-color: #e6656e;
+}
+.btn:hover{
+    background-color: #69c78a;
+}
+.plans .recommend:hover{
+    background-color: #e68b91;
+}
+/** **/
+
+/** section-domain**/
+.section-domain{
+    width: 100%;
+    padding: 5em 0;
+
+    text-align: center; /** perguntar pro professor pq não margin-left: auto e margin-right:auto**/
+    background-color: #34454E;
+
+    margin-top: 150px;
+}
+.section-domain h1{
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.section-domain p{
+    color: #fff;
+    font-size: 25px;
+    
+    
+}
+.div-inputs input{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.div-inputs input[type=text]{
+    padding: 19px 12px;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.div-inputs input[type=submit]{
+    margin-top: 20px;
+    background-color: #2cc762;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 50px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+#form-domain input[type=text]{
+    margin-top: 40px;
+    border: 1px solid #ccc;
+}
+/** **/
+
+/** section-contact**/
+.section-contact{
+    width: 100%;
+    position: relative;
+    text-align: center; /** n foi com m-left auto m-right auto? tente text-align:center**/
+    padding-top: 5em; /** precisou de espaçamento com o topo? melhor utilizar o padding-top: rem **/
+}
+.section-contact h1{
+    font-size: 35px;
+}
+.section-contact p{
+    font-size: 20px;
+}
+#form-contact .btn{
+    width: 20%;
+    font-size: 25px;
+}
+#form-contact input[type=textarea]{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 8rem;
+    text-align: center;
+}
+#form-contact input[type=text],#form-contact input[type=email]{
+    width: 13%;
+    height: 1rem;
+}
+.input-text{
+    margin-left: 25px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(185, 184, 184);
+    border-radius: 5px;
+    padding: 15px 20px; /** padding tbm ajuda a dar um espaço do placeholder com a borda **/
+}
+
+/** **/
+
+/** footer **/
+footer{
+    
+    text-align: center;
+    margin-top:  150px;
+}
+footer p{
+    color: rgb(121, 19, 223);
+    font-weight: bolder;
+}
+/** **/
